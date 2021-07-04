@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e45WcM6LRUjVNhm9+nkDmT9zqH2+/UEdVPPZvN/CuZfa1tGZ/WGbEOwpLI04mdSY3XSwH8IaRYEGMu4tOLLU4Q==",
+  "dgSpecHash": "kGSHGz2kJncoEQtRWCqUgjl83UJtWwS+d340g5vPowsfI9hUEvEm3ksWTQCXI6Y6Wr/ILgfIV88hZUiuy1aUiA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dyagi\\Desktop\\СИСПРОГ ЛР 1\\Logic\\Logic.csproj",
+  "projectFilePath": "C:\\Users\\dyagi\\Desktop\\Ира ТЗ\\Logic\\Logic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dyagi\\.nuget\\packages\\htmlagilitypack\\1.11.34\\htmlagilitypack.1.11.34.nupkg.sha512",
     "C:\\Users\\dyagi\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

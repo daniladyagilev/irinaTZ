@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dyagi\\Desktop\\СИСПРОГ ЛР 1\\Logic\\Logic.csproj": {}
+    "C:\\Users\\dyagi\\Desktop\\Ира ТЗ\\Logic\\Logic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dyagi\\Desktop\\СИСПРОГ ЛР 1\\Logic\\Logic.csproj": {
+    "C:\\Users\\dyagi\\Desktop\\Ира ТЗ\\Logic\\Logic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dyagi\\Desktop\\СИСПРОГ ЛР 1\\Logic\\Logic.csproj",
+        "projectUniqueName": "C:\\Users\\dyagi\\Desktop\\Ира ТЗ\\Logic\\Logic.csproj",
         "projectName": "Logic",
-        "projectPath": "C:\\Users\\dyagi\\Desktop\\СИСПРОГ ЛР 1\\Logic\\Logic.csproj",
+        "projectPath": "C:\\Users\\dyagi\\Desktop\\Ира ТЗ\\Logic\\Logic.csproj",
         "packagesPath": "C:\\Users\\dyagi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dyagi\\Desktop\\СИСПРОГ ЛР 1\\Logic\\obj\\",
+        "outputPath": "C:\\Users\\dyagi\\Desktop\\Ира ТЗ\\Logic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dyagi\\AppData\\Roaming\\NuGet\\NuGet.Config",
