@@ -21,39 +21,26 @@ namespace Logic
         /// Number words
         /// and quantity
         /// </summary>
-        public string[] site { get; private set; }
 
-        public Analyze(string[] sites)
-        {
-            site = sites;
-        }
 
-        public void Work()
+        public Dictionary<string, int> Work(string site)
         {
-            for (int i = 0; i < site.Length; i++)
-            {
-                Console.WriteLine("Words of - " + site[i]);
-                Console.WriteLine("//////////////////////////////");
-                string text = ReadTextFromSite(site[i]);
+            Dictionary<string, int> res = new Dictionary<string, int>();
+                string text = ReadTextFromSite(site);
 
                 if (text == null)
                 {
                     Console.WriteLine("Bad respons from site, may be wrong");
-                    break;
                 }
                 var result = Calc(text);
                 result.Remove("");
-                foreach (var pair in result)
-                    Console.WriteLine("{0} - {1}", pair.Key, pair.Value);
-                Console.WriteLine("//////////////////////////////");
-            }
-
+                res = result;
+            return res;
         }
 
         static Dictionary<string, int> Calc(string site)
         {
             var res = new Dictionary<string, int>();
-
             foreach (var word in site.Split
                 (' ', ',', '.', '!', '?', '"', ';', ':', '[', ']', '(', ')', '\n', '\r', '\t').Skip(1))
             {
@@ -61,24 +48,31 @@ namespace Logic
                 res.TryGetValue(word, out count);
                 res[word] = count + 1;
             }
-
             return res;
         }
 
 
         public string ReadTextFromSite(string site)
         {
-            HtmlWeb htmlWeb = new HtmlWeb();
-            try
+            
+            var document = new HtmlDocument();
+            document.LoadHtml(site);
+            var tempString = new StringBuilder();
+            foreach (HtmlNode style in document.DocumentNode.Descendants("style").ToArray())
             {
-                HtmlAgilityPack.HtmlDocument document = htmlWeb.Load(site);
-                return document.DocumentNode.InnerText;
+                style.Remove();
             }
-            catch (Exception e)
+            foreach (HtmlNode script in document.DocumentNode.Descendants("script").ToArray())
             {
-                Console.WriteLine("Error : " + e.ToString());
-                return null;
+                script.Remove();
             }
+            foreach (HtmlTextNode node in document.DocumentNode.SelectNodes("//*[not(self::script or self::style)]/text()[normalize-space()]"))
+            {
+                tempString.AppendLine(node.InnerText);
+            }
+            return Convert.ToString(tempString);
         }
+
+        
     }
 }

@@ -4,19 +4,14 @@ using System.IO;
 using System.Net;
 using System.Text;
 
-namespace Logic.Analyzer
+namespace Logic
 {
     class GetRequest
     {
-        public string[] site { get; private set; }
-
-        public GetRequest(string[] sites)
+        
+        public static string SaveHTMLPages(string site)
         {
-            site = sites;
-        }
-
-        public void SaveHTMLPages()
-        {
+            string html = "";
             for (int i = 0; i < site.Length; i++)
             {
                 try
@@ -24,8 +19,10 @@ namespace Logic.Analyzer
                     using (WebClient client = new WebClient())
                     {
                         string directory = Directory.GetCurrentDirectory();
-                        Console.WriteLine(site[i].ToString());
-                        string html = client.DownloadString(site[i].ToString());
+                        Console.WriteLine(site.ToString());
+
+                        html += client.DownloadString(site.ToString());
+
                         File.WriteAllText(directory + @"\" + i + ".html", html);
                         Console.WriteLine("File save");
                     }
@@ -35,6 +32,7 @@ namespace Logic.Analyzer
                     Console.WriteLine("Error : " + e.ToString());
                 }
             }
+            return html;
         }
     }
 }

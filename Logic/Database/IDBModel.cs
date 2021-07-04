@@ -13,7 +13,7 @@ namespace Logic
 
       //  public void UpdateNode(Node node);
 
-        public List<Stat> GetStats();
+        public List<Stat> GetStatsFromDB();
 
 
     }

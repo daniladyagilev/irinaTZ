@@ -4,28 +4,33 @@ using System.Text;
 using System.Linq;
 using Logic.Database;
 using Microsoft.EntityFrameworkCore;
+using System.IO;
 
 namespace Logic
 {
     public class DBModel : IDBModel
     {
-        public List<Stat> GetStats()
+        public List<Stat> GetStatsFromDB() //rename to post stats to db
         {
+
+            string createText = "https://yandex.ru";
+            var htmls = GetRequest.SaveHTMLPages(createText);
+
+            var pairs = new Analyze().Work(htmls);
 
             List<Stat> nodes = new List<Stat>();
 
             using (ApplicationContext db = new ApplicationContext())
             {
-                var rows = db.Stat.ToList();
-                foreach (var row in rows)
+                foreach (var pair in pairs)
                 {
                     Stat entry = new Stat
                     {
-                        Id = row.Id,
-                        Quantity = row.Quantity,
-                        Word = row.Word
+                       Word = pair.Key,
+                       Quantity = pair.Value
                     };
                     nodes.Add(entry);
+                    db.Stat.Add(entry);
                 }
             }
             return nodes;
