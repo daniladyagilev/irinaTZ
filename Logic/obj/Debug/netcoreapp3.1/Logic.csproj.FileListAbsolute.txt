@@ -1,0 +1,26 @@
+C:\Users\dyagi\Desktop\Logic\obj\Debug\netcoreapp3.1\Logic.AssemblyInfoInputs.cache
+C:\Users\dyagi\Desktop\Logic\obj\Debug\netcoreapp3.1\Logic.AssemblyInfo.cs
+C:\Users\dyagi\Desktop\Logic\obj\Debug\netcoreapp3.1\Logic.csproj.CoreCompileInputs.cache
+C:\Users\dyagi\Desktop\Logic\bin\Debug\netcoreapp3.1\Logic.dll.config
+C:\Users\dyagi\Desktop\Logic\bin\Debug\netcoreapp3.1\Logic.deps.json
+C:\Users\dyagi\Desktop\Logic\bin\Debug\netcoreapp3.1\Logic.runtimeconfig.json
+C:\Users\dyagi\Desktop\Logic\bin\Debug\netcoreapp3.1\Logic.runtimeconfig.dev.json
+C:\Users\dyagi\Desktop\Logic\bin\Debug\netcoreapp3.1\Logic.dll
+C:\Users\dyagi\Desktop\Logic\bin\Debug\netcoreapp3.1\Logic.pdb
+C:\Users\dyagi\Desktop\Logic\obj\Debug\netcoreapp3.1\Logic.dll
+C:\Users\dyagi\Desktop\Logic\obj\Debug\netcoreapp3.1\Logic.pdb
+C:\Users\dyagi\Desktop\Logic\obj\Debug\netcoreapp3.1\Logic.genruntimeconfig.cache
+C:\Users\dyagi\Desktop\Logic\obj\Debug\netcoreapp3.1\Logic.csprojAssemblyReference.cache
+C:\Users\dyagi\Desktop\СИСПРОГ ЛР 1\Logic\bin\Debug\netcoreapp3.1\Logic.dll.config
+C:\Users\dyagi\Desktop\СИСПРОГ ЛР 1\Logic\bin\Debug\netcoreapp3.1\Logic.deps.json
+C:\Users\dyagi\Desktop\СИСПРОГ ЛР 1\Logic\bin\Debug\netcoreapp3.1\Logic.runtimeconfig.json
+C:\Users\dyagi\Desktop\СИСПРОГ ЛР 1\Logic\bin\Debug\netcoreapp3.1\Logic.runtimeconfig.dev.json
+C:\Users\dyagi\Desktop\СИСПРОГ ЛР 1\Logic\bin\Debug\netcoreapp3.1\Logic.dll
+C:\Users\dyagi\Desktop\СИСПРОГ ЛР 1\Logic\bin\Debug\netcoreapp3.1\Logic.pdb
+C:\Users\dyagi\Desktop\СИСПРОГ ЛР 1\Logic\obj\Debug\netcoreapp3.1\Logic.AssemblyInfoInputs.cache
+C:\Users\dyagi\Desktop\СИСПРОГ ЛР 1\Logic\obj\Debug\netcoreapp3.1\Logic.AssemblyInfo.cs
+C:\Users\dyagi\Desktop\СИСПРОГ ЛР 1\Logic\obj\Debug\netcoreapp3.1\Logic.csproj.CoreCompileInputs.cache
+C:\Users\dyagi\Desktop\СИСПРОГ ЛР 1\Logic\obj\Debug\netcoreapp3.1\Logic.dll
+C:\Users\dyagi\Desktop\СИСПРОГ ЛР 1\Logic\obj\Debug\netcoreapp3.1\Logic.pdb
+C:\Users\dyagi\Desktop\СИСПРОГ ЛР 1\Logic\obj\Debug\netcoreapp3.1\Logic.genruntimeconfig.cache
+C:\Users\dyagi\Desktop\СИСПРОГ ЛР 1\Logic\obj\Debug\netcoreapp3.1\Logic.csprojAssemblyReference.cache
